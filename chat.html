@@ -11,6 +11,7 @@
 
     <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="sending.js"></script>
 </head>
 <body>
 <div class="main-container">
@@ -24,7 +25,7 @@
 
                 </div>
                 <!--end of col-->
-                <div class="col">
+                <div class="col" id="messageList">
                     <div class="card-header d-flex justify-content-between align-items-center">
                         <div class="media align-items-center">
                             <img alt="Image" src="https://avatars0.githubusercontent.com/u/36033988?s=460&v=4" class="avatar avatar-sm" />
@@ -183,8 +184,8 @@
                                 </div>
                                 <input class="form-control" type="text" placeholder="Type a message" name="message" />
                             </div>
-                            <button class="btn btn-link pr-0">
-                            <span class="h3">&#x1F600;</span>
+                            <button class="btn btn-link pr-0" id="send_button">
+                            <span class="h3">SEND</span>
                             </button>
                         </form>
                     </div>

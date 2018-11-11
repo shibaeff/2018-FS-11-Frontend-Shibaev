@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <!-- This file has been downloaded from Bootsnipp.com. Enjoy! -->
+    <title>Chat - Bootsnipp.com</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="http://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+    
+    <link rel="stylesheet" type="text/css" href="chat.css" media="screen" />
+
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="sending.js"></script>
+</head>
+<body>
+<div class="main-container">
+    <section>
+        <div class="container">
+            <div class="row card flex-row">
+                <div class="col-auto">
+                    <form class="card-header d-none d-lg-block">
+                        <input class="form-control form-control-lg" type="search" placeholder="Search chat" />
+                    </form>
+
+                </div>
+                <!--end of col-->
+                <div class="col" id="messageList">
+                    <div class="card-header d-flex justify-content-between align-items-center">
+                        <div class="media align-items-center">
+                            <img alt="Image" src="https://avatars0.githubusercontent.com/u/36033988?s=460&v=4" class="avatar avatar-sm" />
+                            <div class="media-body">
+                                <h6 class="mb-0 d-block">Pavel Shibaev
+                                <span class="badge badge-indicator badge-success"></span>
+                                </h6>
+                                <span class="text-muted text-small">last seen today at 2:15pm</span>
+                            </div>
+                        </div>
+                        <div class="dropdown">
+                            <button class="btn btn-outline-secondary dropdown-toggle dropdown-toggle-no-arrow" type="button" id="Button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="icon-chevron-down"></i>
+                            </button>
+                            <div class="dropdown-menu dropdown-menu-right dropdown-menu-sm" aria-labelledby="Button">
+                                <a class="dropdown-item" href="#">Contact info</a>
+                                <a class="dropdown-item" href="#">Mute</a>
+                                <a class="dropdown-item" href="#">Clear messages</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Delete chat</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!--end card header-->
+                    <div class="card-body overflow-auto">
+                        <div class="row justify-content-start">
+                            <div class="col-auto">
+                                <div class="card bg-secondary">
+                                    <div class="card-body p-2">
+                                        <p class="mb-0">
+                                            Wie geht's?
+                                        </p>
+                                        <div>
+                                            <small class="opacity-60">1:08pm</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row justify-content-end text-right">
+                            <div class="col-auto">
+                                <div class="card bg-primary text-white">
+                                    <div class="card-body p-2">
+                                        <p class="mb-0">
+                                            So-so
+                                        </p>
+                                        <div>
+                                            <i class="icon-check text-small"></i>
+                                            <small class="opacity-60">1:07pm</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row justify-content-start">
+                            <div class="col-auto">
+                                <div class="card bg-secondary">
+                                    <div class="card-body p-2">
+                                        <p class="mb-0">
+                                            Was passiert?&#x1F44C;
+                                        </p>
+                                        <div>
+                                            <small class="opacity-60">1:06pm</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row justify-content-end text-right">
+                            <div class="col-auto">
+                                <div class="card bg-primary text-white">
+                                    <div class="card-body p-2">
+                                        <p class="mb-0">
+                                           Komitski guckt dies
+                                        </p>
+                                        <div>
+                                            <i class="icon-check text-small"></i>
+                                            <small class="opacity-60">1:05pm</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row justify-content-start">
+                            <div class="col-auto">
+                                <div class="card bg-secondary">
+                                    <div class="card-body p-2">
+                                        <p class="mb-0">
+                                            Scheisse
+                                        </p>
+                                        <div>
+                                            <small class="opacity-60">1:05pm</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row justify-content-end text-right">
+                            <div class="col-auto">
+                                <div class="card bg-primary text-white">
+                                    <div class="card-body p-2">
+                                        <p class="mb-0">
+                                            Was sollen wir machen?
+                                        </p>
+                                        <div>
+                                            <i class="icon-check text-small"></i>
+                                            <small class="opacity-60">1:05pm</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row justify-content-start">
+                            <div class="col-auto">
+                                <div class="card bg-secondary">
+                                    <div class="card-body p-2">
+                                        <p class="mb-0">
+                                            Keine Ahnung)) &#x1F44D;
+                                        </p>
+                                        <div>
+                                            <small class="opacity-60">1:04pm</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row justify-content-end text-right">
+                            <div class="col-auto">
+                                <div class="card bg-primary text-white">
+                                    <div class="card-body p-2">
+                                        <p class="mb-0">
+                                            Fliehen wir aus))
+                                        </p>
+                                        <div>
+                                            <i class="icon-check text-small"></i>
+                                            <small class="opacity-60">1:04pm</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mb-4">
+                            <div class="col text-center">
+                                <span class="badge badge-secondary">Conversation Started: Yesterday</span>
+                            </div>
+                            <!--end of col-->
+                        </div>
+                    </div>
+                    <div class="card-footer bg-secondary">
+                        <form class="d-flex align-items-center">
+                            <div class="input-group input-group-lg">
+                                <div class="input-group-prepend">
+                                    <button class="btn btn-secondary" type="button">
+                                    <i class="icon-attachment"></i>
+                                    </button>
+                                </div>
+                                <input class="form-control" type="text" placeholder="Type a message" name="message" />
+                            </div>
+                            <button class="btn btn-link pr-0" id="send_button">
+                            <span class="h3">SEND</span>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+                <!--end of col-->
+            </div>
+            <!--end of row-->
+        </div>
+    </section>
+</div>
+<script type="text/javascript">
+
+</script>
+</body>
+</html>
